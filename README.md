@@ -103,16 +103,45 @@ Desarrollar una experiencia web que represente la identidad de Code Coffee, apli
 
 Code Coffee se encuentra en construcción. Su estructura inicial está preparada para incorporar progresivamente los elementos visuales y funcionalidades de la cafetería.
 
-## CONTRIBUTORES
+## CONTRIBUTORS
 
 <div align="center">
 
-espacio espacio
+Este proyecto fue posible gracias al trabajo colaborativo de:
 
-Desarrollo y construcción de Code Coffee.
+<table>
+  <tr>
+    <td align="center" width="200">
+      <a href="https://github.com/Zexter27">
+        <img src="https://github.com/Zexter27.png" width="100px;" alt="Zexter27"/>
+        <br />
+        <b>Zexter27</b>
+      </a>
+      <br />
+      <sub>Project Developer</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://github.com/USUARIO2">
+        <img src="https://github.com/USUARIO2.png" width="100px;" alt="Contributor 2"/>
+        <br />
+        <b>Nombre integrante 2</b>
+      </a>
+      <br />
+      <sub>Frontend Developer</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://github.com/USUARIO3">
+        <img src="https://github.com/USUARIO3.png" width="100px;" alt="Contributor 3"/>
+        <br />
+        <b>Nombre integrante 3</b>
+      </a>
+      <br />
+      <sub>Frontend Developer</sub>
+    </td>
+  </tr>
+</table>
 
-[GitHub](https://github.com/Zexter27)
-
+</div>
 ---
 
 ### CODE COFFEE
