@@ -6,10 +6,12 @@
 
 **Una pausa, una buena taza y nuevas ideas por desarrollar.**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/STATUS-EN_DESARROLLO-C49A6C?style=for-the-badge)
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/STATUS-EN_DESARROLLO-C49A6C?style=for-the-badge" />
+
+<br />
 
 [Ver repositorio](https://github.com/Zexter27/codelabs-project)
 
@@ -35,17 +37,21 @@ El proyecto está desarrollado utilizando tecnologías fundamentales del desarro
 
 </div>
 
+---
+
 ## TECNOLOGÍAS
 
 <div align="center">
 
-| Tecnología | Uso |
+| Tecnología | Utilización |
 |:---:|:---|
 | HTML5 | Estructura y contenido de la página. |
 | CSS3 | Diseño, estilos y presentación visual. |
 | JavaScript | Interactividad y comportamiento dinámico. |
 
 </div>
+
+---
 
 ## ESTRUCTURA DEL PROYECTO
 
@@ -65,9 +71,11 @@ codelabs-project/
     └── Página principal
 ```
 
+---
+
 ## INSTALACIÓN Y EJECUCIÓN
 
-Para ejecutar el proyecto localmente:
+Para ejecutar el proyecto localmente, sigue estos pasos:
 
 **1. Clonar el repositorio**
 
@@ -87,6 +95,51 @@ Abre el archivo `index.html` directamente en tu navegador o utiliza la extensió
 
 No se requiere una instalación de dependencias para la estructura HTML inicial.
 
+---
+
+## CONTRIBUTORS
+
+<div align="center">
+
+Este proyecto fue desarrollado mediante trabajo colaborativo, donde cada integrante aportó sus conocimientos y habilidades para construir Code Coffee.
+
+<br />
+
+<table>
+  <tr>
+    <td align="center" width="220">
+      <a href="https://github.com/MENA-1701">
+        <img src="https://github.com/MENA-1701.png" width="120" height="120" style="border-radius:50%;" alt="MENA-1701"/>
+        <br />
+        <b>MENA-1701</b>
+      </a>
+      <br />
+      <sub>Estilos y estructura</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://github.com/manu009-lab">
+        <img src="https://github.com/manu009-lab.png" width="120" height="120" style="border-radius:50%;" alt="manu009-lab"/>
+        <br />
+        <b>manu009-lab</b>
+      </a>
+      <br />
+      <sub>Menú y productos</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## ESTADO DEL PROYECTO
+
+<img src="https://img.shields.io/badge/Desarrollo-En%20proceso-C49A6C?style=flat-square" />
+
+Code Coffee se encuentra en construcción. Su estructura inicial está preparada para incorporar progresivamente los elementos visuales y funcionalidades de la cafetería.
+
+---
+
 ## OBJETIVO
 
 Desarrollar una experiencia web que represente la identidad de Code Coffee, aplicando conocimientos de:
@@ -96,60 +149,22 @@ Desarrollar una experiencia web que represente la identidad de Code Coffee, apli
 - Diseño y estilos con CSS3.
 - Programación con JavaScript.
 - Organización de proyectos frontend.
+- Trabajo colaborativo mediante Git y GitHub.
 
-## ESTADO DEL PROYECTO
-
-<badge color="warning">En desarrollo</badge>
-
-Code Coffee se encuentra en construcción. Su estructura inicial está preparada para incorporar progresivamente los elementos visuales y funcionalidades de la cafetería.
-
-## CONTRIBUTORS
+---
 
 <div align="center">
 
-Este proyecto fue posible gracias al trabajo colaborativo de:
+# CODE COFFEE
 
-<table>
-  <tr>
-    <td align="center" width="200">
-      <a href="https://github.com/Zexter27">
-        <img src="https://github.com/Zexter27.png" width="100px;" alt="Zexter27"/>
-        <br />
-        <b>Zexter27</b>
-      </a>
-      <br />
-      <sub>Project Developer</sub>
-    </td>
-    <td align="center" width="200">
-      <a href="https://github.com/USUARIO2">
-        <img src="https://github.com/USUARIO2.png" width="100px;" alt="Contributor 2"/>
-        <br />
-        <b>Nombre integrante 2</b>
-      </a>
-      <br />
-      <sub>Frontend Developer</sub>
-    </td>
-    <td align="center" width="200">
-      <a href="https://github.com/USUARIO3">
-        <img src="https://github.com/USUARIO3.png" width="100px;" alt="Contributor 3"/>
-        <br />
-        <b>Nombre integrante 3</b>
-      </a>
-      <br />
-      <sub>Frontend Developer</sub>
-    </td>
-  </tr>
-</table>
-
-</div>
----
-
-### CODE COFFEE
+### BREW. CODE. REPEAT.
 
 `01000011 01001111 01000100 01000101`
 
-**BREW. CODE. REPEAT.**
-
 <sub>Desarrollado con HTML, CSS y JavaScript.</sub>
+
+<br />
+
+**© 2026 Code Coffee — Todos los derechos reservados.**
 
 </div>
