@@ -1,0 +1,18 @@
+*{
+    background-color: #fff891;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera{
+    border-bottom: 6px solid #311e00;
+    padding: 20px;
+}
+
+.bienvenido h2{
+    align-items: center;
+
+}
+
+/* mm*/
