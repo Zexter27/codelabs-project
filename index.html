@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code-Coffee</title>
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
     <!-- encabezado -->
     <header class="cabecera">
         <div class="bienvenido">
             <h2>BIENVENIDO AL CAFE</h2>
-        
         </div>
+
+        <!-- navegacion -->
+        <nav class="navegacion">
+            <a href="#menu">Menú</a>
+        </nav>
     </header>
 
+    <main>
+    <!-- ========== MENÚ DE PRODUCTOS (Estudiante 02) ========== -->
+    <section class="menu-seccion" id="menu">
+        <h2 class="menu-titulo">Nuestro menú</h2>
+        <p class="menu-subtitulo">Horneado cada mañana. Pídelo para acompañar tu café.</p>
 
-    <!-- navegacion -->
+        <div class="menu-grid">
 
-    <section class="cafes">
-        <h4>CAFES</h4>
-    </section>
-    <section class="salado">
-        <h4>SALADO</h4>
-    </section>
-    <section class="dulce">
-        <h4>DULCE</h4>
-    </section>
+            <article class="tarjeta">
+                <img class="tarjeta-foto" src="img/producto1.jpg" alt="Cupcake de chocolate con crema de vainilla y un grano de café" style="object-position: center 65%;">
+                <div class="tarjeta-info">
+                    <h3 class="tarjeta-nombre">Cupcake de chocolate</h3>
+                    <p class="tarjeta-desc">Bizcocho de cacao con crema de vainilla y un toque de café.</p>
+                    <p class="tarjeta-precio">$7.500</p>
+                </div>
+            </article>
 
+            <article class="tarjeta">
+                <img class="tarjeta-foto" src="img/producto2.jpg" alt="Dos croissants con azúcar glass, frambuesas y una taza de café" style="object-position: 65% center;">
+                <div class="tarjeta-info">
+                    <h3 class="tarjeta-nombre">Croissant de mantequilla</h3>
+                    <p class="tarjeta-desc">Hojaldrado y crujiente, con azúcar glass. Sale con frambuesas.</p>
+                    <p class="tarjeta-precio">$6.000</p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img class="tarjeta-foto" src="img/producto3.jpg" alt="Vitrina con croissants glaseados, pizzas y napolitanas" style="object-position: 60% center;">
+                <div class="tarjeta-info">
+                    <h3 class="tarjeta-nombre">Croissant relleno</h3>
+                    <p class="tarjeta-desc">Con jamón y queso, o glaseado con chocolate blanco y oscuro.</p>
+                    <p class="tarjeta-precio">$9.500</p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img class="tarjeta-foto" src="img/producto4.jpg" alt="Dos cafés macchiato con medialunas" style="object-position: center;">
+                <div class="tarjeta-info">
+                    <h3 class="tarjeta-nombre">Café con medialuna</h3>
+                    <p class="tarjeta-desc">Macchiato espumoso y una medialuna recién horneada.</p>
+                    <p class="tarjeta-precio">$12.000</p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img class="tarjeta-foto" src="img/producto5.jpg" alt="Tostada de aguacate con salmón ahumado y un café con leche" style="object-position: 60% center;">
+                <div class="tarjeta-info">
+                    <h3 class="tarjeta-nombre">Tostada de aguacate y salmón</h3>
+                    <p class="tarjeta-desc">Pan integral con aguacate, salmón ahumado y ajonjolí, con un café con leche.</p>
+                    <p class="tarjeta-precio">$16.500</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    </main>
 
     <!-- pie de pagina -->
-
     <footer class="footer">
-        <p> &copy; derechos reservados a ...</p>
+        <p>&copy; derechos reservados a ...</p>
     </footer>
 
 </body>

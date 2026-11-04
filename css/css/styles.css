@@ -1,0 +1,125 @@
+:root {
+    --color-fondo: #fdf6e3;
+    --color-texto: #2b1d14;
+    --color-principal: #1a7a6d;
+    --color-acento: #c93a1f;
+    --color-tarjeta: #fffdf5;
+    --color-borde: #2b1d14;
+    --fuente: Georgia, "Times New Roman", serif;
+    --fuente-titulo: "Pacifico", "Brush Script MT", "Segoe Script", cursive;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--fuente);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.5;
+}
+
+/* ===== Cabecera y navegación (base mínima) ===== */
+.cabecera {
+    background: var(--color-principal);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+.navegacion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.navegacion a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navegacion a:hover,
+.navegacion a:focus-visible { text-decoration: underline; }
+
+/* ===== Menú de productos ===== */
+.menu-titulo {
+    font-family: var(--fuente-titulo);
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-acento);
+    margin: 2.5rem 1rem 0;
+}
+.menu-seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 1rem;
+    scroll-margin-top: 1rem;
+}
+.menu-seccion h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.tarjeta {
+    background: var(--color-tarjeta);
+    border: 2px solid var(--color-borde);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.tarjeta-img {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: #f1e2c0;
+    border-bottom: 2px solid var(--color-borde);
+}
+/* Foto de cada producto (carpeta img/) */
+.tarjeta-foto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--color-borde);
+}
+.tarjeta-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+.tarjeta-nombre { font-size: 1.15rem; }
+.tarjeta-desc { font-size: 0.95rem; flex: 1; }
+.tarjeta-precio {
+    font-weight: bold;
+    color: var(--color-acento);
+    font-size: 1.1rem;
+}
+
+/* ===== Pie de página ===== */
+.footer {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background: var(--color-borde);
+    color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .tarjeta-foto { height: 180px; }
+    .menu-titulo { font-size: 2.4rem; }
+}
