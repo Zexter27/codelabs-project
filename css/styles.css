@@ -1,21 +1,31 @@
-body{
-    background-color: #fff891; 
-    font-family: Arial, sans-serif;
+body {
+    background-color: #fff891;
+    font-family: cursive;
     margin: 0;
     padding: 0;
+    color: #311e00;
 }
 
-.cabecera{
-    background-color: #311e00; 
-    padding: 15px;
-    text-align: center;
-    border-bottom: 6px solid #311e00;
+html {
+    scroll-behavior: smooth;
 }
 
-.cabecera nav a{
+.cabecera {
+    background-color: #311e00;
+    padding: 8px 30px;
+    display: flex;
+    justify-content: flex-end;   
+    align-items: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecera nav a {
     color: #fff891;
     text-decoration: none;
-    margin: 0 15px;
+    margin-left: 25px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -24,60 +34,76 @@ body{
     text-decoration: underline;
 }
 
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #fff;
+    display: block;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    object-fit: cover;
+}
+
+
 .bienvenido {
-    text-align: center; 
-    padding: 10px 10px;
+    display: flex;         
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.imgprincipal {
+    width: 45%;
+    max-width: 500px;
+}
+
+.imgprincipal img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.texto-bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
 }
 
 .bienvenido h2 {
-    color: #311e00;
     font-size: 32px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 .bienvenido p {
-    color: #311e00;
     font-size: 18px;
-}
-
-.Salado h2{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 10px 10px;
-    padding: 20px 20px;
-}
-
-.Croissants{
-    width: 250px;
-    height: 250px;
-    border-radius: 20%;
-    object-fit: cover;
-    border: 5px solid #030303;
-}
-
-.desayuno{
-    width: 250px;
-    height: 250px;
-    border-radius: 20%;
-    object-fit: cover;
-    border: 5px solid #030303;
-}
-
-.sandwich{
-    width: 250px;
-    height: 250px;
-    border-radius: 20%;
-    object-fit: cover;
-    border: 5px solid #030303;
+    margin: 0 0 20px 0;
 }
 
 
+.btn-menu {
+    display: inline-block;
+    background-color: #311e00;
+    color: #fff891;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
 
-
-
-
-
-
-
+.btn-menu:hover {
+    opacity: 0.9;
+}
 
 .footer {
     text-align: center;
@@ -86,5 +112,13 @@ body{
     font-size: 14px;
 }
 
+.footer a {
+    color: #311e00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
 
-/* mm*/
+.footer a:hover {
+    text-decoration: underline;
+}

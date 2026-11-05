@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code-Coffee</title>
-
-    
-
+    <title>Code-Coffee</title>    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-contacto.css">
 </head>
 <body>
     
-    <!-- encabezado -->
+    <!-- Encabezado -->
     <header class="cabecera">
         <nav>
             <a href="#inicio">Inicio</a>
-            <a href="#cafes">Cafés</a>
-            <a href="#salado">Salado</a>
-            <a href="#dulce">Dulce</a>
+            <a href="#menu">Menu</a>
+            <a href="#contacto">Contacto</a>
         </nav>
+        <a class="logo">
+            <img src="img/logocafeteria.png" alt="Logo de la cafetería">
+        </a>
     </header>
 
-    <div class="bienvenido">
-        <h2>BIENVENIDO AL CAFÉ</h2>
-        <p>Disfruta de los mejores productos</p>
+
+    <div class="bienvenido" id="inicio">
+        <div class="imgprincipal">
+            <img src="img/imgprincipal.png" alt="cafetería">
+        </div>
+
+        
+        <div class="texto-bienvenida">
+            <h2>BIENVENIDO A CODE-COFFE</h2>
+            <p>Disfruta de los mejores productos</p>
+            <a href="#menu" class="btn-menu">IR A MENU</a>
+        </div>
     </div>
 
+    <section class="menu" id="menu"></section>
 
-    <section class="menu"></section>
-
+    <section class="contacto" id="contacto"></section>
     <!--contacto-->
     <section class="contacto">
         <h2>CONTACTO</h2>
@@ -51,13 +59,15 @@
     </section>
     
 
-
-    <!-- pie de pagina -->
-    
+    <!-- Pie de página -->
     <footer class="footer">
-        <p> &copy; derechos reservados a ...</p>
-    </footer>
+        <p>&copy; derechos reservados a code-coffee
+            <a href="#inicio">Volver al inicio</a>
+        </p>
     
+    </footer>
+
+    <script src="js/script.js"></script>
     <script src ="js/script.js"></script>
 </body>
 </html>
