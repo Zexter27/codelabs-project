@@ -1,0 +1,122 @@
+.contacto {
+    background-color: #f3e7d3;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contacto h2 {
+    color: hwb(51 2% 82%);
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.contacto h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: hwb(36 4% 78%);
+    margin: 12px auto 25px;
+    border-radius: 5px;
+}
+
+
+#formulario {
+    background-color: lab(90.41% 0.48 2.9);
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(67, 40, 24, 0.15);
+    border: 1px solid hsl(36, 37%, 66%);
+}
+
+/* ETIQUETAS */
+
+#formulario label {
+    display: block;
+    text-align: left;
+    color: #432818;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* CAMPOS DE TEXTO */
+
+#formulario input,
+#formulario textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border: 1px solid #d6bd98;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+/* CUANDO SE SELECCIONA UN CAMPO */
+
+#formulario input:focus,
+#formulario textarea:focus {
+    border-color: #99582a;
+    box-shadow: 0 0 5px rgba(153, 88, 42, 0.3);
+}
+
+/* AREA DEL MENSAJE */
+
+#formulario textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* BOTON ENVIAR */
+
+#formulario button {
+    width: 100%;
+    padding: 14px;
+    background-color: #6f4518;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* EFECTO DEL BOTON */
+
+#formulario button:hover {
+    background-color: #432818;
+}
+
+/* MENSAJE DE RESPUESTA */
+
+#respuesta {
+    margin-top: 20px;
+    color: #432818;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    #formulario {
+        padding: 25px 20px;
+    }
+
+    .contacto h2 {
+        font-size: 26px;
+    }
+}
