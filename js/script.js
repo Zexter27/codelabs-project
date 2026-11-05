@@ -8,7 +8,7 @@ formulario.addEventListener("submit", function(event) {
     let correo = document.getElementById("correo").value;
     let mensaje = document.getElementById("mensaje").value;
 
-    if (nombre == "" || correo == "" || mensaje == "") {
+    if (nombre.trim() == "" || correo.trim() == "" || mensaje.trim() == "") {
 
         document.getElementById("respuesta").textContent =
         "Por favor, completa todos los campos";
