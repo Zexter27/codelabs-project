@@ -1,0 +1,152 @@
+/* =====================================================
+   MENÚ DE PRODUCTOS  -  formas.css  (Estudiante 02)
+   ===================================================== */
+
+/* ---------- Sección general ---------- */
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.menu-titulo {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #c8381f;
+    margin-bottom: 30px;
+}
+
+/* ---------- Recuadro de cada categoría ---------- */
+.menu-categoria {
+    background-color: #fff5e1;
+    border: 3px solid #3b2a20;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 6px 6px 0 #c8381f;   /* sombra sólida que resalta el recuadro */
+    scroll-margin-top: 80px;         /* el header no tapa el título al usar el menú */
+}
+
+.menu-categoria h3 {
+    font-size: 1.6rem;
+    color: #3b2a20;
+    border-bottom: 3px solid #c8381f;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* ---------- Fila horizontal de productos ---------- */
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;               /* nunca bajan a otra línea */
+    gap: 20px;
+    overflow-x: auto;                /* si no caben, se desliza hacia el lado */
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+}
+
+/* Centrado seguro: si caben se centran; si no, se desliza sin cortar la primera */
+.menu-grid .tarjeta:first-child { margin-left: auto; }
+.menu-grid .tarjeta:last-child  { margin-right: auto; }
+
+/* Barra de desplazamiento con los colores del menú */
+.menu-grid::-webkit-scrollbar {
+    height: 10px;
+}
+.menu-grid::-webkit-scrollbar-track {
+    background: #f1dfbf;
+    border-radius: 10px;
+}
+.menu-grid::-webkit-scrollbar-thumb {
+    background: #c8381f;
+    border-radius: 10px;
+}
+
+/* ---------- Tarjeta de producto ---------- */
+.tarjeta {
+    flex: 1 0 260px;                 /* crece para llenar el marco, mínimo 260px */
+    max-width: 340px;                /* evita que una sola tarjeta se estire demasiado */
+    scroll-snap-align: start;
+    background-color: #fffaf0;
+    border: 2px solid #3b2a20;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen: llena todo el ancho, centrada y sin deformarse */
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+}
+
+/* Ajuste de recorte por imagen (para que no se corte el producto) */
+.tarjeta img[alt="Panecillos de sal"]      { object-position: center 40%; }
+.tarjeta img[alt="Pan artesanal rústico"]  { object-position: center top; }
+
+/* Si otra foto queda cortada, copia una regla como esta:
+.tarjeta img[alt="Cupcake de chocolate"] { object-position: center top; }
+*/
+
+.tarjeta-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-info h4 {
+    font-size: 1.2rem;
+    color: #3b2a20;
+    margin-bottom: 8px;
+}
+
+.tarjeta-info p {
+    font-size: 0.95rem;
+    color: #5a4a40;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.precio {
+    align-self: flex-start;
+    background-color: #c8381f;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* ---------- OPCIONAL: orden de derecha a izquierda ----------
+   Si quieres que la primera tarjeta aparezca a la derecha,
+   copia estas dos reglas fuera de este comentario:
+
+   .menu-grid { direction: rtl; }
+   .tarjeta   { direction: ltr; }
+*/
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .menu-titulo { font-size: 1.8rem; }
+    .tarjeta img { height: 190px; }
+}
+
+@media (max-width: 480px) {
+    .menu { padding: 25px 12px; }
+    .menu-categoria { padding: 14px; box-shadow: 4px 4px 0 #c8381f; }
+    .tarjeta { flex: 0 0 230px; }
+}
