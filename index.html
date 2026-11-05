@@ -8,6 +8,7 @@
     
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-contacto.css">
 </head>
 <body>
     
@@ -29,8 +30,25 @@
 
     <section class="menu"></section>
 
+    <!--contacto-->
+    <section class="contacto">
+        <h2>CONTACTO</h2>
+        <form id="formulario">
+            <label>Nombre:*</label>
+            <input type="text" id="nombre">
 
-    <section class="contacto"></section>
+            <label>Correo:*</label>
+            <input type="email" id="correo">
+
+            <label>Mensaje:*</label>
+            <textarea id="mensaje"></textarea>
+
+
+            <button type="submit">Enviar:</button>
+        </form>
+        <p id="respuesta"></p>
+        
+    </section>
     
 
 
@@ -40,6 +58,6 @@
         <p> &copy; derechos reservados a ...</p>
     </footer>
     
-    <script src ="script.js"></script>
+    <script src ="js/script.js"></script>
 </body>
 </html>
