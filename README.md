@@ -107,23 +107,32 @@ Este proyecto fue desarrollado mediante trabajo colaborativo, donde cada integra
 
 <table>
   <tr>
-    <td align="center" width="220">
+    <td align="center" width="200">
       <a href="https://github.com/MENA-1701">
-        <img src="https://github.com/MENA-1701.png" width="120" height="120" style="border-radius:50%;" alt="MENA-1701"/>
+        <img src="https://github.com/MENA-1701.png" width="120" height="120" style="border-radius:50%;" alt="Ximena"/>
         <br />
-        <b>MENA-1701</b>
+        <b>Ximena</b>
       </a>
       <br />
       <sub>Estilos y estructura</sub>
     </td>
-    <td align="center" width="220">
+    <td align="center" width="200">
       <a href="https://github.com/manu009-lab">
-        <img src="https://github.com/manu009-lab.png" width="120" height="120" style="border-radius:50%;" alt="manu009-lab"/>
+        <img src="https://github.com/manu009-lab.png" width="120" height="120" style="border-radius:50%;" alt="Manuel"/>
         <br />
-        <b>manu009-lab</b>
+        <b>Manuel</b>
       </a>
       <br />
       <sub>Menú y productos</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://github.com/antores29">
+        <img src="https://github.com/antores29.png" width="120" height="120" style="border-radius:50%;" alt="Anton"/>
+        <br />
+        <b>Anton</b>
+      </a>
+      <br />
+      <sub>Desarrollo del proyecto</sub>
     </td>
   </tr>
 </table>
