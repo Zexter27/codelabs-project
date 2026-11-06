@@ -11,9 +11,15 @@
 
 .menu-titulo {
     text-align: center;
-    font-size: 2.2rem;
-    color: #c8381f;
-    margin-bottom: 30px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1b7a6e;                       /* verde azulado */
+    text-shadow: 3px 3px 0 #f2a922;       /* sombra dorada */
+    margin-bottom: 35px;
 }
 
 /* ---------- Recuadro de cada categoría ---------- */
@@ -96,6 +102,8 @@
 /* Ajuste de recorte por imagen (para que no se corte el producto) */
 .tarjeta img[alt="Panecillos de sal"]      { object-position: center 40%; }
 .tarjeta img[alt="Pan artesanal rústico"]  { object-position: center top; }
+.tarjeta img[alt="Pan de café con rebanadas"] { object-position: center 30%; }
+.tarjeta img[alt="Pan trenzado de café y chocolate"] { object-position: center 55%; }
 
 /* Si otra foto queda cortada, copia una regla como esta:
 .tarjeta img[alt="Cupcake de chocolate"] { object-position: center top; }
@@ -124,10 +132,11 @@
 
 .precio {
     align-self: flex-start;
-    background-color: #c8381f;
-    color: #fff;
+    background-color: #f2a922;            /* botón dorado */
+    color: #3b2a20;
+    border: 2px solid #3b2a20;
     font-weight: bold;
-    padding: 6px 14px;
+    padding: 5px 14px;
     border-radius: 20px;
 }
 
@@ -141,12 +150,13 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-    .menu-titulo { font-size: 1.8rem; }
+    .menu-titulo { font-size: 2.4rem; letter-spacing: 2px; }
     .tarjeta img { height: 190px; }
 }
 
 @media (max-width: 480px) {
     .menu { padding: 25px 12px; }
+    .menu-titulo { font-size: 1.9rem; }
     .menu-categoria { padding: 14px; box-shadow: 4px 4px 0 #c8381f; }
     .tarjeta { flex: 0 0 230px; }
 }
