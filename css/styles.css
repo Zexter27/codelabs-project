@@ -26,7 +26,7 @@ html {
     color: #fff891;
     text-decoration: none;
     margin-left: 25px;
-    font-size: 16px;
+    font-size: 23px;
     font-weight: bold;
 }
 
@@ -52,41 +52,54 @@ html {
 }
 
 
+/*  SECCIÓN BIENVENIDA */
 .bienvenido {
     display: flex;         
     align-items: center;
     justify-content: center; 
-    gap: 40px;
-    padding: 40px 20px;
+    gap: 60px;
+    min-height: calc(100vh - 86px);
+    padding: 60px 40px;
+    box-sizing: border-box;
+    background-color: #f4ebd0;
+    scroll-margin-top: 85px; 
 }
 
 .imgprincipal {
-    width: 45%;
-    max-width: 500px;
+    width: 48%;
+    max-width: 550px;
 }
 
 .imgprincipal img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 16px;
     display: block;
+    
+    box-shadow: 0 15px 35px rgba(49, 30, 0, 0.25);
+    transition: transform 0.3s ease;
 }
 
 .texto-bienvenida {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .bienvenido h2 {
-    font-size: 32px;
-    margin: 0 0 10px 0;
+    font-size: 38px;
+    margin: 0 0 15px 0;
+    color: #311e00;
+    line-height: 1.15;
+    font-weight: bold;
 }
 
 .bienvenido p {
-    font-size: 18px;
-    margin: 0 0 20px 0;
+    font-size: 19px;
+    margin: 0 0 30px 0;
+    color: #5a4a40;
+    line-height: 1.4;
 }
 
 
@@ -94,29 +107,41 @@ html {
     display: inline-block;
     background-color: #311e00;
     color: #fff891;
-    padding: 10px 20px;
+    padding: 14px 30px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 8px;
-    transition: opacity 0.2s ease;
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(49, 30, 0, 0.25);
+    transition: all 0.3s ease;
 }
 
 .btn-menu:hover {
-    opacity: 0.9;
+    background-color: #6f4518;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(49, 30, 0, 0.35);
 }
 
+/* PIE DE PÁGINA */
 .footer {
-    text-align: center;
-    padding: 20px;
-    color: #311e00;
+    background-color: #311e00;  
+    color: #fff891;             
+    padding: 12px 40px;         
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    text-align: left;          
 }
 
 .footer a {
-    color: #311e00;
+    color: #fff891;             
     text-decoration: none;
     font-weight: bold;
-    margin-left: 10px;
 }
 
 .footer a:hover {

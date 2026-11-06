@@ -2,7 +2,7 @@
     background-color: #f3e7d3;
     padding: 60px 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
 }
 
 .contacto h2 {
@@ -17,7 +17,6 @@
     display: block;
     width: 60px;
     height: 4px;
-    background-color: hwb(36 4% 78%);
     margin: 12px auto 25px;
     border-radius: 5px;
 }
@@ -31,6 +30,10 @@
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(67, 40, 24, 0.15);
     border: 1px solid hsl(36, 37%, 66%);
+
+    flex: 1;
+    width: 100%;
+    margin: 0;
 }
 
 /* ETIQUETAS */
@@ -51,7 +54,7 @@
     width: 100%;
     padding: 13px;
     margin-bottom: 22px;
-    border: 1px solid #d6bd98;
+    border: 1px solid #c59855;
     border-radius: 8px;
     background-color: #ffffff;
     font-size: 15px;
@@ -119,4 +122,34 @@
     .contacto h2 {
         font-size: 26px;
     }
+}
+
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.mensaje-despedida {
+    flex: 1;
+    text-align: left;
+    padding: 35px;
+    color: #432818;
+}
+
+.mensaje-despedida h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #6f4518;
+}
+
+.mensaje-despedida p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
